@@ -1,0 +1,9 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-board {
+    border: 10px solid #BBADA0;
+    border-radius: 1%;
+}
