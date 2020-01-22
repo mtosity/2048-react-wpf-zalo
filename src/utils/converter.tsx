@@ -1,12 +1,14 @@
 export interface BoxInfoInt {
   title: string;
   color: string;
+  titleColor: string;
 }
 
 export function convertTitleToBoxInfo(title: number): BoxInfoInt {
   let boxinfo = {
     title: "",
-    color: ""
+    color: "",
+    titleColor: "#F9F6F2",
   } as BoxInfoInt;
   boxinfo.title = title === 0 ? "" : title.toString();
   switch (title) {
@@ -15,9 +17,11 @@ export function convertTitleToBoxInfo(title: number): BoxInfoInt {
       break;
     case 2:
       boxinfo.color = "#EEE4DA";
+      boxinfo.titleColor = "#776E65"
       break;
     case 4:
       boxinfo.color = "#EDE0C8";
+      boxinfo.titleColor = "#776E65"
       break;
     case 8:
       boxinfo.color = "#F2B179";

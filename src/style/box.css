@@ -1,8 +1,13 @@
 .box {
-    width: 10vw;
-    height: 10vw;
+    width: 15vmin;
+    height: 15vmin;
     border: 10px solid #BBADA0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.title {
+    font-size: 8vmin;
+    font-weight: bold;
 }

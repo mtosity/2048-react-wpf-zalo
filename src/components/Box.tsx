@@ -10,7 +10,7 @@ interface BoxProps {
 
 const Box: React.FC<BoxProps> = ({ box }: BoxProps) => {
   const {com_ani} = box
-  const {title, color} = convertTitleToBoxInfo(box.title)
+  const {title, color, titleColor} = convertTitleToBoxInfo(box.title)
 
   const [state, toggle] = useState(true)
   const { x } = useSpring({ from: { x: 0 }, x: state ? 1 : 0, config: { duration: 200 } })
@@ -35,7 +35,7 @@ const Box: React.FC<BoxProps> = ({ box }: BoxProps) => {
         .interpolate(x => `scale(${x})`),
 
     })} >
-      <h1 style={{color: 'white'}}>{title}</h1>
+      <p style={{color: titleColor}} className="title">{title}</p>
     </animated.div>
   );
 };

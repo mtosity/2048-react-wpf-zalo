@@ -14,11 +14,13 @@ export const InitRandomAlgo = (
   }
   result_boxes[coor_ran[0]][coor_ran[1]] = {
     ...result_boxes[coor_ran[0]][coor_ran[1]],
-    title: 2
+    title: 2,
+    com_ani: true,
   };
   result_boxes[coor_ran[2]][coor_ran[3]] = {
     ...result_boxes[coor_ran[2]][coor_ran[3]],
-    title: 2
+    title: 2,
+    com_ani: true,
   };
   return result_boxes;
 };
@@ -259,6 +261,7 @@ export const GenerRandomAlgo = (
     let chosenIndexPZ = Math.floor(Math.random() * pz_length);
     let chosenPoint = point_zero[chosenIndexPZ];
     boxes[chosenPoint.i][chosenPoint.j].title = 2;
+    boxes[chosenPoint.i][chosenPoint.j].com_ani = true;
   }
   return boxes;
 };

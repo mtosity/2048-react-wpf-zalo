@@ -42,6 +42,7 @@ const Game: React.FC = () => {
 
   useEffect(() => {
     dispatcher.initRandom();
+    dispatcher.resetComAni();
   }, []);
   return (
     <div className="container">
