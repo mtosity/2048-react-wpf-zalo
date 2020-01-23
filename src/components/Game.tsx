@@ -5,6 +5,7 @@ import Boxes from "../components/Boxes";
 import { useSelector, shallowEqual, useDispatch } from "react-redux";
 import { StateInt, BoxInt } from "../utils/state";
 import { Dispatcher } from "../game_redux";
+import { useSwipeable, Swipeable } from "react-swipeable";
 
 const Game: React.FC = () => {
   const boxes: Array<Array<BoxInt>> = useSelector<
@@ -15,19 +16,26 @@ const Game: React.FC = () => {
   const dispatcher = new Dispatcher(dispatch);
 
   const downHandler = ({ key }: { key: string }) => {
+    let isArrow = false
     if (key === "ArrowUp") {
       dispatcher.moveUp();
+      isArrow = true
     }
     if (key === "ArrowDown") {
       dispatcher.moveDown();
+      isArrow = true
     }
     if (key === "ArrowLeft") {
       dispatcher.moveLeft();
+      isArrow = true
     }
     if (key === "ArrowRight") {
       dispatcher.moveRight();
+      isArrow = true
     }
-    dispatcher.resetComAni();
+    if(isArrow === true){
+      dispatcher.resetComAni();
+    }
   };
 
   useEffect(() => {
@@ -40,12 +48,26 @@ const Game: React.FC = () => {
     };
   }, []);
 
+  //swipe
+  const handlers = useSwipeable({
+    onSwipedLeft: e => {dispatcher.moveLeft(); dispatcher.resetComAni()},
+    onSwipedUp: e => {dispatcher.moveUp(); dispatcher.resetComAni()},
+    onSwipedDown: e => {dispatcher.moveDown(); dispatcher.resetComAni()},
+    onSwipedRight: e => {dispatcher.moveRight(); dispatcher.resetComAni()},
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+    trackTouch: true,
+  });
+
   useEffect(() => {
     dispatcher.initRandom();
     dispatcher.resetComAni();
+    return () => {
+      console.log('out')
+    }
   }, []);
   return (
-    <div className="container">
+    <div className="container" {...handlers} >
       <Boxes boxes={boxes} />
     </div>
   );
