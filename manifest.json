@@ -1,6 +1,6 @@
 {
   "short_name": "2048",
-  "name": "2048 minhtamos",
+  "name": "mlem mlem mlem",
   "icons": [
     {
       "src": "ba.png",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "ava.jpg",
+      "src": "ba.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "ava.jpg",
+      "src": "thao.jpg",
       "type": "image/png",
       "sizes": "512x512"
     }
