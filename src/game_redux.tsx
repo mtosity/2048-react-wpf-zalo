@@ -1,5 +1,5 @@
 import { createStore, Action, Reducer, Dispatch } from "redux";
-import { state as INIT_STATE, StateInt, box, BoxInt } from "./utils/state";
+import { state as INIT_STATE, StateInt } from "./utils/state";
 import { InitRandomAlgo, MoveAlgo, Move, ResetComAniAlgo } from "./game_algo";
 
 export enum ActionType {

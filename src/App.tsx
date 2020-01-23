@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import { store } from "./game_redux";
 import { Provider } from "react-redux";
 import Game from "./components/Game";

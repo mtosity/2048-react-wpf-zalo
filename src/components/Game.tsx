@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import "../style/game.css";
 import Boxes from "../components/Boxes";
 
-import { useSelector, shallowEqual, useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { StateInt, BoxInt } from "../utils/state";
 import { Dispatcher } from "../game_redux";
-import { useSwipeable, Swipeable } from "react-swipeable";
+import { useSwipeable } from "react-swipeable";
 
 const Game: React.FC = () => {
   const boxes: Array<Array<BoxInt>> = useSelector<
@@ -15,59 +15,62 @@ const Game: React.FC = () => {
   const dispatch = useDispatch();
   const dispatcher = new Dispatcher(dispatch);
 
-  const downHandler = ({ key }: { key: string }) => {
-    let isArrow = false
-    if (key === "ArrowUp") {
-      dispatcher.moveUp();
-      isArrow = true
-    }
-    if (key === "ArrowDown") {
-      dispatcher.moveDown();
-      isArrow = true
-    }
-    if (key === "ArrowLeft") {
-      dispatcher.moveLeft();
-      isArrow = true
-    }
-    if (key === "ArrowRight") {
-      dispatcher.moveRight();
-      isArrow = true
-    }
-    if(isArrow === true){
-      dispatcher.resetComAni();
-    }
-  };
-
   useEffect(() => {
+    dispatcher.initRandom();
+    dispatcher.resetComAni();
+    const downHandler = ({ key }: { key: string }) => {
+      let isArrow = false;
+      if (key === "ArrowUp") {
+        dispatcher.moveUp();
+        isArrow = true;
+      }
+      if (key === "ArrowDown") {
+        dispatcher.moveDown();
+        isArrow = true;
+      }
+      if (key === "ArrowLeft") {
+        dispatcher.moveLeft();
+        isArrow = true;
+      }
+      if (key === "ArrowRight") {
+        dispatcher.moveRight();
+        isArrow = true;
+      }
+      if (isArrow) {
+        dispatcher.resetComAni();
+      }
+    };
     window.addEventListener("keydown", downHandler);
-    //window.addEventListener("keyup", upHandler);
-    // Remove event listeners on cleanup
     return () => {
       window.removeEventListener("keydown", downHandler);
-      //window.removeEventListener("keyup", upHandler);
     };
   }, []);
 
   //swipe
   const handlers = useSwipeable({
-    onSwipedLeft: e => {dispatcher.moveLeft(); dispatcher.resetComAni()},
-    onSwipedUp: e => {dispatcher.moveUp(); dispatcher.resetComAni()},
-    onSwipedDown: e => {dispatcher.moveDown(); dispatcher.resetComAni()},
-    onSwipedRight: e => {dispatcher.moveRight(); dispatcher.resetComAni()},
+    onSwipedLeft: e => {
+      dispatcher.moveLeft();
+      dispatcher.resetComAni();
+    },
+    onSwipedUp: e => {
+      dispatcher.moveUp();
+      dispatcher.resetComAni();
+    },
+    onSwipedDown: e => {
+      dispatcher.moveDown();
+      dispatcher.resetComAni();
+    },
+    onSwipedRight: e => {
+      dispatcher.moveRight();
+      dispatcher.resetComAni();
+    },
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
-    trackTouch: true,
+    trackTouch: true
   });
 
-  useEffect(() => {
-    dispatcher.initRandom();
-    dispatcher.resetComAni();
-    return () => {
-      console.log('out')
-    }
-  }, []);
   return (
-    <div className="container" {...handlers} >
+    <div className="container" {...handlers}>
       <Boxes boxes={boxes} />
     </div>
   );
