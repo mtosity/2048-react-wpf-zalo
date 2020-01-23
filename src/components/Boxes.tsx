@@ -1,9 +1,13 @@
 import React from "react";
 import Box from "./Box";
-import { StateInt } from "../utils/state";
+import { BoxInt } from "../utils/state";
 import "../style/boxes.css";
 
-const Boxes: React.FC<StateInt> = ({boxes}: StateInt) => {
+interface BoxesStateInt {
+  boxes: Array<Array<BoxInt>>
+} 
+
+const Boxes: React.FC<BoxesStateInt> = ({boxes}: BoxesStateInt) => {
   return (
     <div className="game-board">
       {boxes.map((row, y) => {
