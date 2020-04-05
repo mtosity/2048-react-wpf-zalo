@@ -6,6 +6,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { StateInt, BoxInt } from "../utils/state";
 import { Dispatcher } from "../game_redux";
 import { useSwipeable } from "react-swipeable";
+import { checkGameOver } from "../utils/helper";
+import swal from 'sweetalert';
 
 const Game: React.FC = () => {
   const boxes: Array<Array<BoxInt>> = useSelector<
@@ -38,6 +40,9 @@ const Game: React.FC = () => {
       }
       if (isArrow) {
         dispatcher.resetComAni();
+        if(checkGameOver(boxes)){
+          swal("GAME OVER!");
+        }
       }
     };
     window.addEventListener("keydown", downHandler);

@@ -4,6 +4,7 @@ export interface BoxInt {
 }
 
 export interface StateInt {
+  gameOver: boolean
   boxes: Array<Array<BoxInt>>;
 }
 
@@ -18,6 +19,7 @@ export const box2: BoxInt = {
 };
 
 export const state: StateInt = {
+  gameOver: false,
   boxes: [
     [
       {

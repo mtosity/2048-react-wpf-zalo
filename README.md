@@ -14,3 +14,5 @@ In the project directory, you run:
 4. Turn website to app
 * Android: website =>setting => Add to home screen
 * IOS:  website => share => Add to home screen
+### DEMO
+https://minhtamos.github.io/2048_REACT/
