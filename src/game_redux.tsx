@@ -8,7 +8,8 @@ export enum ActionType {
   MoveLeft,
   MoveRight,
   InitRandom,
-  ResetComAni
+  ResetComAni,
+  ResetAll
 }
 
 export interface DispatchActionInt extends Action<ActionType> {
@@ -16,7 +17,7 @@ export interface DispatchActionInt extends Action<ActionType> {
 }
 
 const reducer: Reducer<StateInt, DispatchActionInt> = (
-  state = INIT_STATE,
+  state = JSON.parse(JSON.stringify(INIT_STATE)), // copy a fking new object of INIT STATE
   action
 ) => {
   switch (action.type) {
@@ -32,6 +33,8 @@ const reducer: Reducer<StateInt, DispatchActionInt> = (
       return { ...state, boxes: MoveAlgo(state.boxes, Move.Right) };
     case ActionType.ResetComAni:
       return { ...state, boxes: ResetComAniAlgo(state.boxes) };
+    case ActionType.ResetAll:
+      return JSON.parse(JSON.stringify(INIT_STATE)); // copy a fking new object of INIT STATE
     default:
       return state;
   }
@@ -49,5 +52,6 @@ export class Dispatcher {
   moveDown = () => this.dispatch({ type: ActionType.MoveDown });
   moveLeft = () => this.dispatch({ type: ActionType.MoveLeft });
   moveRight = () => this.dispatch({ type: ActionType.MoveRight });
-  resetComAni = () => this.dispatch({type: ActionType.ResetComAni});
+  resetComAni = () => this.dispatch({ type: ActionType.ResetComAni });
+  resetAll = () => this.dispatch({ type: ActionType.ResetAll });
 }
