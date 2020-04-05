@@ -40,12 +40,6 @@ const Game: React.FC = () => {
       }
       if (isArrow) {
         dispatcher.resetComAni();
-        if (checkGameOver(boxes)) {
-          Swal.fire({
-            icon: "error",
-            title: "GAME OVER"
-          });
-        }
       }
     };
     window.addEventListener("keydown", downHandler);
@@ -53,6 +47,14 @@ const Game: React.FC = () => {
       window.removeEventListener("keydown", downHandler);
     };
   }, []);
+  useEffect(() => {
+    if (checkGameOver(boxes)) {
+      Swal.fire({
+        icon: "error",
+        title: "GAME OVER"
+      });
+    }
+  }, [boxes]);
   //swipe
   const handlers = useSwipeable({
     onSwipedLeft: e => {
