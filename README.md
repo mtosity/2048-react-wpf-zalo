@@ -8,7 +8,7 @@ In the project directory, you run:
 * The project will start at localhost:3000
 
 ### What in this project
-1. Using typescript, redux, react-spring to animate
+1. Using hooks, typescript, redux, react-spring to animate
 2. Controll by arrow key, can swipe in smarthphone  
 3. Scale animation when title combined and new title appeare
 4. Turn website to app
