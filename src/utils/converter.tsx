@@ -1,5 +1,3 @@
-import { box } from "./state";
-
 export interface BoxInfoInt {
   title: string;
   color: string;

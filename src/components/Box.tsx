@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import "../style/box.css";
 import { BoxInt } from "../utils/state";
-import { BoxInfoInt, convertTitleToBoxInfo } from "../utils/converter";
+import { convertTitleToBoxInfo } from "../utils/converter";
 import {useSpring, animated} from 'react-spring'
 
 interface BoxProps {
