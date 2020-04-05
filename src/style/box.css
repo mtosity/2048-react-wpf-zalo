@@ -1,7 +1,7 @@
 .box {
     width: 15vmin;
     height: 15vmin;
-    border: 10px solid #BBADA0;
+    border: 2vmin solid #BBADA0;
     display: flex;
     justify-content: center;
     align-items: center;
