@@ -7,7 +7,7 @@ import { StateInt, BoxInt } from "../utils/state";
 import { Dispatcher } from "../game_redux";
 import { useSwipeable } from "react-swipeable";
 import { checkGameOver } from "../utils/helper";
-import swal from 'sweetalert';
+import Swal from "sweetalert2";
 
 const Game: React.FC = () => {
   const boxes: Array<Array<BoxInt>> = useSelector<
@@ -40,8 +40,11 @@ const Game: React.FC = () => {
       }
       if (isArrow) {
         dispatcher.resetComAni();
-        if(checkGameOver(boxes)){
-          swal("GAME OVER!");
+        if (checkGameOver(boxes)) {
+          Swal.fire({
+            icon: "error",
+            title: "GAME OVER"
+          });
         }
       }
     };
@@ -50,24 +53,47 @@ const Game: React.FC = () => {
       window.removeEventListener("keydown", downHandler);
     };
   }, []);
-
   //swipe
   const handlers = useSwipeable({
     onSwipedLeft: e => {
       dispatcher.moveLeft();
       dispatcher.resetComAni();
+      if (checkGameOver(boxes)) {
+        Swal.fire({
+          icon: "error",
+          title: "GAME OVER"
+        });
+      }
     },
     onSwipedUp: e => {
       dispatcher.moveUp();
       dispatcher.resetComAni();
+      if (checkGameOver(boxes)) {
+        Swal.fire({
+          icon: "error",
+          title: "GAME OVER"
+        });
+      }
     },
     onSwipedDown: e => {
       dispatcher.moveDown();
       dispatcher.resetComAni();
+      if (checkGameOver(boxes)) {
+        Swal.fire({
+          icon: "error",
+          title: "GAME OVER"
+        });
+      }
     },
     onSwipedRight: e => {
       dispatcher.moveRight();
       dispatcher.resetComAni();
+      if (checkGameOver(boxes)) {
+        Swal.fire({
+          icon: "error",
+          title: "GAME OVER"
+        });
+      }
     },
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
