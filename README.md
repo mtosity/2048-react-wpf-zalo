@@ -15,4 +15,4 @@ In the project directory, you run:
 * Android: website =>setting => Add to home screen
 * IOS:  website => share => Add to home screen
 ### DEMO
-https://minhtamos.github.io/2048_REACT/
+https://mtosity.github.io/2048_REACT/
