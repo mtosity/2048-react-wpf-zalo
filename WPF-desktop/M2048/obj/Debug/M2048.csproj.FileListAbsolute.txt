@@ -1,0 +1,45 @@
+D:\outside works\M2048\M2048\obj\Debug\M2048.csprojAssemblyReference.cache
+D:\outside works\M2048\M2048\obj\Debug\MainWindow.g.cs
+D:\outside works\M2048\M2048\obj\Debug\App.g.cs
+D:\outside works\M2048\M2048\obj\Debug\M2048_MarkupCompile.cache
+D:\outside works\M2048\M2048\obj\Debug\M2048_MarkupCompile.lref
+D:\outside works\M2048\M2048\bin\Debug\M2048.exe.config
+D:\outside works\M2048\M2048\bin\Debug\M2048.exe
+D:\outside works\M2048\M2048\bin\Debug\M2048.pdb
+D:\outside works\M2048\M2048\obj\Debug\MainWindow.baml
+D:\outside works\M2048\M2048\obj\Debug\M2048.g.resources
+D:\outside works\M2048\M2048\obj\Debug\M2048.Properties.Resources.resources
+D:\outside works\M2048\M2048\obj\Debug\M2048.csproj.GenerateResource.cache
+D:\outside works\M2048\M2048\obj\Debug\M2048.csproj.CoreCompileInputs.cache
+D:\outside works\M2048\M2048\obj\Debug\M2048.exe
+D:\outside works\M2048\M2048\obj\Debug\M2048.pdb
+D:\outside works\c#\M2048\M2048\bin\Debug\M2048.exe.config
+D:\outside works\c#\M2048\M2048\bin\Debug\M2048.exe
+D:\outside works\c#\M2048\M2048\bin\Debug\M2048.pdb
+D:\outside works\c#\M2048\M2048\obj\Debug\M2048.csprojAssemblyReference.cache
+D:\outside works\c#\M2048\M2048\obj\Debug\MainWindow.g.cs
+D:\outside works\c#\M2048\M2048\obj\Debug\App.g.cs
+D:\outside works\c#\M2048\M2048\obj\Debug\M2048_MarkupCompile.cache
+D:\outside works\c#\M2048\M2048\obj\Debug\M2048_MarkupCompile.lref
+D:\outside works\c#\M2048\M2048\obj\Debug\MainWindow.baml
+D:\outside works\c#\M2048\M2048\obj\Debug\M2048.g.resources
+D:\outside works\c#\M2048\M2048\obj\Debug\M2048.Properties.Resources.resources
+D:\outside works\c#\M2048\M2048\obj\Debug\M2048.csproj.GenerateResource.cache
+D:\outside works\c#\M2048\M2048\obj\Debug\M2048.csproj.CoreCompileInputs.cache
+D:\outside works\c#\M2048\M2048\obj\Debug\M2048.exe
+D:\outside works\c#\M2048\M2048\obj\Debug\M2048.pdb
+D:\outside_works\c#\M2048\M2048\bin\Debug\M2048.exe.config
+D:\outside_works\c#\M2048\M2048\bin\Debug\M2048.exe
+D:\outside_works\c#\M2048\M2048\bin\Debug\M2048.pdb
+D:\outside_works\c#\M2048\M2048\obj\Debug\M2048.csprojAssemblyReference.cache
+D:\outside_works\c#\M2048\M2048\obj\Debug\MainWindow.g.cs
+D:\outside_works\c#\M2048\M2048\obj\Debug\App.g.cs
+D:\outside_works\c#\M2048\M2048\obj\Debug\M2048_MarkupCompile.cache
+D:\outside_works\c#\M2048\M2048\obj\Debug\M2048_MarkupCompile.lref
+D:\outside_works\c#\M2048\M2048\obj\Debug\MainWindow.baml
+D:\outside_works\c#\M2048\M2048\obj\Debug\M2048.g.resources
+D:\outside_works\c#\M2048\M2048\obj\Debug\M2048.Properties.Resources.resources
+D:\outside_works\c#\M2048\M2048\obj\Debug\M2048.csproj.GenerateResource.cache
+D:\outside_works\c#\M2048\M2048\obj\Debug\M2048.csproj.CoreCompileInputs.cache
+D:\outside_works\c#\M2048\M2048\obj\Debug\M2048.exe
+D:\outside_works\c#\M2048\M2048\obj\Debug\M2048.pdb

@@ -1,0 +1,14 @@
+{
+  "app": {
+    "title": "2048 MTosity",
+    "headerColor": "#1843EF",
+    "textColor": "white",
+    "statusBarColor": "#1843EF",
+    "leftButton": "both"
+  },
+  "debug": false,
+  "listCSS": [],
+  "listSyncJS": [],
+  "listAsyncJS": [],
+  "pages": []
+}

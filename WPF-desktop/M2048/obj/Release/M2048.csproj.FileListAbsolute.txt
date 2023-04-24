@@ -1,0 +1,15 @@
+D:\outside_works\c#\M2048\M2048\bin\Release\M2048.exe.config
+D:\outside_works\c#\M2048\M2048\bin\Release\M2048.exe
+D:\outside_works\c#\M2048\M2048\bin\Release\M2048.pdb
+D:\outside_works\c#\M2048\M2048\obj\Release\M2048.csprojAssemblyReference.cache
+D:\outside_works\c#\M2048\M2048\obj\Release\MainWindow.g.cs
+D:\outside_works\c#\M2048\M2048\obj\Release\App.g.cs
+D:\outside_works\c#\M2048\M2048\obj\Release\M2048_MarkupCompile.cache
+D:\outside_works\c#\M2048\M2048\obj\Release\M2048_MarkupCompile.lref
+D:\outside_works\c#\M2048\M2048\obj\Release\MainWindow.baml
+D:\outside_works\c#\M2048\M2048\obj\Release\M2048.g.resources
+D:\outside_works\c#\M2048\M2048\obj\Release\M2048.Properties.Resources.resources
+D:\outside_works\c#\M2048\M2048\obj\Release\M2048.csproj.GenerateResource.cache
+D:\outside_works\c#\M2048\M2048\obj\Release\M2048.csproj.CoreCompileInputs.cache
+D:\outside_works\c#\M2048\M2048\obj\Release\M2048.exe
+D:\outside_works\c#\M2048\M2048\obj\Release\M2048.pdb
