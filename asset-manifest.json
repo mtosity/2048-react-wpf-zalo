@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/2048_REACT/static/css/main.9f6f7dc0.css",
-    "main.js": "/2048_REACT/static/js/main.0bb79c2c.js",
-    "index.html": "/2048_REACT/index.html",
-    "main.9f6f7dc0.css.map": "/2048_REACT/static/css/main.9f6f7dc0.css.map",
-    "main.0bb79c2c.js.map": "/2048_REACT/static/js/main.0bb79c2c.js.map"
+    "main.css": "/2048-react-wpf-zalo/static/css/main.9f6f7dc0.css",
+    "main.js": "/2048-react-wpf-zalo/static/js/main.0bb79c2c.js",
+    "index.html": "/2048-react-wpf-zalo/index.html",
+    "main.9f6f7dc0.css.map": "/2048-react-wpf-zalo/static/css/main.9f6f7dc0.css.map",
+    "main.0bb79c2c.js.map": "/2048-react-wpf-zalo/static/js/main.0bb79c2c.js.map"
   },
   "entrypoints": [
     "static/css/main.9f6f7dc0.css",
