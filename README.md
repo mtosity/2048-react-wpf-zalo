@@ -19,4 +19,4 @@ In the project directory, you run:
 * Zalo miniapp
 
 ### DEMO
-https://mtosity.github.io/2048_REACT/
+https://mtosity.github.io/2048-react-wpf-zalo/
